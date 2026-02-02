@@ -1,49 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Our Staff - Museum of Extinct Extraterrestrial Civilizations</title>
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+/* =========================
+   General futuristic styles
+========================= */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* dark space gradient */
+  color: #e0e0e0;
+}
 
-<!-- Navigation -->
-<nav class="top-nav">
-  <a href="../index.html">Home</a>
-  <a href="staff.html">Staff</a>
-  <a href="collections.html">Collections</a>
-</nav>
+/* =========================
+   Header and Navigation
+========================= */
+header, .top-nav {
+  background: #1b1f3b;
+  color: #00fff7;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px #00fff7;
+}
 
-<!-- Page Title -->
-<h1>Our Staff</h1>
+/* Navigation links with neon glow */
+.top-nav a, .main-nav button {
+  margin: 5px;
+  padding: 12px 25px;
+  background: #2c2f63;
+  color: #00f0ff;
+  border: 1px solid #00f0ff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #00f0ff;
+}
 
-<!-- Archaeologist -->
-<section>
-  <h2>Dr. Chernous Varvara – Archaeologist</h2>
-  <p>Specializes in recovering alien artifacts from planets with extinct civilizations.  
-     Has led expeditions to the Zeta-5 and Orion sectors, discovering ancient alien tools and inscriptions.</p>
-</section>
+.top-nav a:hover, .main-nav button:hover {
+  background: #00f0ff;
+  color: #1b1f3b;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00f0ff;
+  transform: translateY(-2px);
+}
 
-<!-- Anthropologist -->
-<section>
-  <h2>Dr. Semyon Lobanov – Anthropologist</h2>
-  <p>Studies extinct extraterrestrial species and their cultures through skeletal remains and preserved environments.  
-     Focuses on social structures, communication methods, and planetary adaptation.</p>
-</section>
+/* =========================
+   Page Titles
+========================= */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3em;
+  color: #ff63f0;
+  text-shadow: 0 0 10px #ff63f0, 0 0 20px #a100ff;
+}
 
-<!-- Culturalist / Interpreter -->
-<section>
-  <h2>Professor Gleb Romanenko – Culturalist / Interpreter</h2>
-  <p>Interprets symbolic and cultural meaning of alien artifacts using comparative analysis and AI-assisted ethnography.  
-     Special interest in rituals, myths, and cosmological beliefs of extinct civilizations.</p>
-</section>
+h2 {
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff;
+}
 
-<!-- Footer -->
-<footer>
-  <p>This is a fictitious website created purely for academic purposes.</p>
-  <p>Some content and images on this site were created with the assistance of AI.</p>
-</footer>
+/* =========================
+   Staff Sections / Cards
+========================= */
+section {
+  background: rgba(255, 255, 255, 0.05); /* semi-transparent futuristic card */
+  padding: 25px;
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(255, 0, 255, 0.2);
+  border: 1px solid rgba(0,255,255,0.3);
+  backdrop-filter: blur(10px);
+}
 
-</body>
-</html>
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #1b1f3b;
+  color: #00fff7;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
