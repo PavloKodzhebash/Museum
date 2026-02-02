@@ -88,3 +88,34 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+/* Staff Page Specific Styles */
+.staff-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    max-width: 700px;
+}
+
+section img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 0 15px #00ffe0;
+}
+
+/* Чередование изображений: вторая секция вправо */
+section:nth-of-type(even) img {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* Clear floats */
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
