@@ -1,96 +1,50 @@
-/* =========================
-   General futuristic styles
-========================= */
 body {
-  margin: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* dark space gradient */
-  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
 }
 
-/* =========================
-   Header and Navigation
-========================= */
-header, .top-nav {
-  background: #1b1f3b;
-  color: #00fff7;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 0 20px #00fff7;
+.top-nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 50, 0.9);
+  padding: 10px 0;
 }
 
-/* Navigation links with neon glow */
-.top-nav a, .main-nav button {
-  margin: 5px;
-  padding: 12px 25px;
-  background: #2c2f63;
-  color: #00f0ff;
-  border: 1px solid #00f0ff;
+.top-nav a {
+  color: #00ffea;
+  margin: 0 15px;
   text-decoration: none;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: all 0.3s;
-  box-shadow: 0 0 10px #00f0ff;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.top-nav a:hover, .main-nav button:hover {
-  background: #00f0ff;
-  color: #1b1f3b;
-  box-shadow: 0 0 20px #00fff7, 0 0 40px #00f0ff;
-  transform: translateY(-2px);
+.top-nav a:hover {
+  color: #ff00ff;
 }
 
-/* =========================
-   Page Titles
-========================= */
 h1 {
   text-align: center;
   margin-top: 50px;
-  font-size: 3em;
-  color: #ff63f0;
-  text-shadow: 0 0 10px #ff63f0, 0 0 20px #a100ff;
+  font-size: 2.5em;
 }
 
-h2 {
-  color: #00f0ff;
-  text-shadow: 0 0 5px #00f0ff;
-}
-
-/* =========================
-   Staff Sections / Cards
-========================= */
 section {
-  background: rgba(255, 255, 255, 0.05); /* semi-transparent futuristic card */
-  padding: 25px;
-  margin: 25px auto;
-  width: 80%;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(255, 0, 255, 0.2);
-  border: 1px solid rgba(0,255,255,0.3);
-  backdrop-filter: blur(10px);
-}
-
-/* =========================
-   Footer
-========================= */
-footer {
-  background: #1b1f3b;
-  color: #00fff7;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 20px auto;
   padding: 20px;
-  text-align: center;
-  font-size: 0.9em;
-  box-shadow: 0 0 20px #00fff7;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-/* =========================
-   Responsive Design
-========================= */
-@media (max-width: 768px) {
-  section {
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 50, 0.9);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
