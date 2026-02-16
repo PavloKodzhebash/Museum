@@ -5,89 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Museum Collections</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/collections.css">
 </head>
 <body>
   <header>
-    <h1>Museum Collections</h1>
+    <h1>Virtual Museum - Collections</h1>
     <nav>
-      <a href="index.html">Home</a> | 
-      <button id="show-histories">Histories</button>
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="other-pages.html">Other</a>
     </nav>
   </header>
 
   <main>
-    <p>Click on the images to see the interpretation modals for each artifact.</p>
+    <section>
+      <h2>Artifacts</h2>
+      <p>Click on an image to see the artifact's interpretation modal.</p>
 
-    <div class="collection-grid">
-      <img src="images/sunstone-amulet.png" 
-           alt="Sunstone Amulet" 
-           class="open-modal" 
-           data-modal-target="#modal-text-sunstone">
-
-      <img src="images/whale-harpoon.png" 
-           alt="Ceremonial Whale Harpoon" 
-           class="open-modal" 
-           data-modal-target="#modal-text-whale">
-
-      <img src="images/obsidian-tablet.png" 
-           alt="Obsidian Writing Tablet" 
-           class="open-modal" 
-           data-modal-target="#modal-text-obsidian">
-    </div>
-
-    <!-- Modal Shell -->
-    <div class="modal" id="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <div class="modal-content">
-        <button class="close-modal" aria-label="Close">x</button>
-        <div id="modal-body"></div>
+      <div class="collection-grid">
+        <img src="images/sunstone-amulet.png" alt="Sunstone Amulet" class="open-modal" data-modal-target="#modal-text-sunstone">
+        <img src="images/whale-harpoon.png" alt="Ceremonial Whale Harpoon" class="open-modal" data-modal-target="#modal-text-whale">
+        <img src="images/obsidian-tablet.png" alt="Obsidian Writing Tablet" class="open-modal" data-modal-target="#modal-text-obsidian">
       </div>
-    </div>
+    </section>
 
-    <!-- Hidden Modals (150 words each) -->
-    <div class="modal-item" id="modal-text-sunstone" hidden>
-      <h2 id="modal-title">Sunstone Amulet — Collection Note</h2>
-      <p>
-        The Sunstone Amulet is a small circular disc, approximately 5 cm in diameter, crafted from polished sunstone with delicate copper wire inlay. 
-        Dating to 1200–1000 BCE, it was discovered in a burial mound in central Scandinavia alongside bronze beads and a small iron knife. 
-        Likely serving as a protective talisman, the amulet’s etched sun-ray motif reflects Bronze Age Nordic reverence for the sun and seasonal cycles. 
-        Its smooth, translucent surface may have enhanced ritual use during sunlight ceremonies, symbolizing life, protection, and continuity. 
-        Excavators noted its fine craftsmanship and subtle glow, suggesting ownership by a high-status individual. 
-        Similar amulets found across Denmark and Sweden indicate widespread symbolic practices. 
-        This artifact offers insight into prehistoric belief systems, solar worship, and the aesthetic sophistication of Nordic artisans.
-      </p>
-    </div>
+    <button id="show-histories" class="btn">Show/Hide Histories</button>
 
-    <div class="modal-item" id="modal-text-whale" hidden>
-      <h2 id="modal-title">Ceremonial Whale Harpoon — Collection Note</h2>
-      <p>
-        The Ceremonial Whale Harpoon is a 120 cm long tool made from whale bone with a carved ivory tip, bound with sinew. 
-        Dating to circa 1500 CE, it was discovered in a coastal cave on the Aleutian Islands, Alaska, along with a stone lamp, feathered headdress fragments, and small carved figurines. 
-        This harpoon likely had ritual or symbolic purposes, possibly used in initiation ceremonies or shamanistic practices, honoring whales as spiritual guides. 
-        Elaborate carvings of marine life adorn the shaft, and the tip shows slight wear, suggesting occasional ceremonial use. 
-        The artifact highlights the deep connection between Arctic maritime societies and the ocean, reflecting both sustenance and spiritual reverence. 
-        Comparable ritual harpoons have been found in other Arctic sites, emphasizing the symbolic role of whales in indigenous culture.
-      </p>
-    </div>
-
-    <div class="modal-item" id="modal-text-obsidian" hidden>
-      <h2 id="modal-title">Obsidian Writing Tablet — Collection Note</h2>
-      <p>
-        The Obsidian Writing Tablet is a flat rectangular slab, 25 cm by 15 cm, made of polished obsidian, with red ochre glyphs inscribed on its surface. 
-        Dating to circa 500 BCE, it was excavated from the ruins of a Mesoamerican ceremonial center in central Mexico, alongside clay figurines, obsidian blades, and ceremonial pottery. 
-        Likely used to record religious, astronomical, or trade information, it may have served as a teaching tool or ritual object. 
-        The glossy surface and carefully painted glyphs indicate deliberate craftsmanship, while minor chips along the edges suggest frequent handling. 
-        This tablet provides insight into early Mesoamerican writing systems, knowledge transmission, and ritual practice. 
-        Similar artifacts from Zapotec and Olmec sites offer comparative perspectives on early literacy and symbolic communication in ancient Mesoamerica.
-      </p>
-    </div>
-
-    <!-- Histories -->
     <section id="histories-section">
       <h2>Artifact Histories</h2>
-      <!-- Histories content same как в предыдущем коде (3 истории) -->
+
+      <div class="history-item">
+        <img src="images/sunstone-amulet.png" alt="Sunstone Amulet">
+        <h3>Sunstone Amulet</h3>
+        <p>This amulet is made from polished sunstone and dates back approximately 900 years. It was found in a ceremonial burial mound and may have been used for ritual purposes. Unique etchings suggest symbolic meanings associated with sunlight and fertility.</p>
+      </div>
+
+      <div class="history-item">
+        <img src="images/whale-harpoon.png" alt="Ceremonial Whale Harpoon">
+        <h3>Ceremonial Whale Harpoon</h3>
+        <p>This whale harpoon was carved from whale bone over 700 years ago. Found in a coastal village site alongside fishing tools, it likely served both functional and ceremonial roles, possibly symbolizing the community’s maritime identity and connection to whales.</p>
+      </div>
+
+      <div class="history-item">
+        <img src="images/obsidian-tablet.png" alt="Obsidian Writing Tablet">
+        <h3>Obsidian Writing Tablet</h3>
+        <p>This tablet of obsidian is approximately 1200 years old, discovered in a domestic dwelling site. Its flat polished surface bears geometric carvings, likely used for teaching, record-keeping, or symbolic storytelling within its culture.</p>
+      </div>
+
     </section>
   </main>
+
+  <!-- Hidden Modals -->
+  <div class="modal-item" id="modal-text-sunstone" hidden>
+    <h2>Sunstone Amulet — Collection Note</h2>
+    <p>Made from polished sunstone, this amulet is roughly 900 years old. Found in a ceremonial burial mound, it likely held ritual significance. Unique etchings suggest symbolic connections to sunlight and fertility. Accompanied by small clay figurines, its discovery hints at ceremonial offerings and cultural symbolism in spiritual practices.</p>
+  </div>
+
+  <div class="modal-item" id="modal-text-whale" hidden>
+    <h2>Ceremonial Whale Harpoon — Collection Note</h2>
+    <p>Carved from whale bone around 700 years ago, this harpoon was found in a coastal village site alongside fishing tools. Its size and craftsmanship suggest ceremonial use, perhaps as a status symbol or in maritime rituals. Notably, the tip is engraved with geometric patterns indicating symbolic significance beyond hunting utility.</p>
+  </div>
+
+  <div class="modal-item" id="modal-text-obsidian" hidden>
+    <h2>Obsidian Writing Tablet — Collection Note</h2>
+    <p>This obsidian tablet, approximately 1200 years old, was discovered in a domestic dwelling. Its flat polished surface bears intricate geometric carvings, possibly for teaching, record-keeping, or storytelling. Found with small ceramic shards, the tablet provides insight into the intellectual and symbolic practices of its culture.</p>
+  </div>
+
+  <!-- Modal Shell -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close">x</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <script src="modal.js"></script>
 </body>
