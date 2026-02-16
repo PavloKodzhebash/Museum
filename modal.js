@@ -8,7 +8,7 @@
     const src = document.querySelector(selector);
     if (!src) { console.warn('Missing modal content:', selector); return; }
     modalBody.innerHTML = src.innerHTML;
-    modal.style.display = 'flex';  // flex для центрирования
+    modal.style.display = 'flex';  // flex центрирование
     lastTrigger = trigger || null;
     closeBtn.focus();
     document.body.style.overflow = 'hidden';
