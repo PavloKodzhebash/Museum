@@ -4,34 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Museum Collections</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/collections.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/collections.css">
 </head>
 <body>
   <header>
     <h1>Museum Collections</h1>
     <nav>
       <a href="index.html">Home</a> | 
-      <a href="#histories-section" id="show-histories">Histories</a>
+      <button id="show-histories">Histories</button>
     </nav>
   </header>
 
   <main>
     <p>Click on the images to see the interpretation modals for each artifact.</p>
 
-    <!-- Collection Items -->
     <div class="collection-grid">
-      <img src="images/collections/sunstone-amulet.jpg" 
+      <img src="../images/collections/sunstone-amulet.png" 
            alt="Sunstone Amulet" 
            class="open-modal" 
            data-modal-target="#modal-text-sunstone">
 
-      <img src="images/collections/whale-harpoon.jpg" 
+      <img src="../images/collections/whale-harpoon.png" 
            alt="Ceremonial Whale Harpoon" 
            class="open-modal" 
            data-modal-target="#modal-text-whale">
 
-      <img src="images/collections/obsidian-tablet.jpg" 
+      <img src="../images/collections/obsidian-tablet.png" 
            alt="Obsidian Writing Tablet" 
            class="open-modal" 
            data-modal-target="#modal-text-obsidian">
@@ -83,30 +82,27 @@
       </p>
     </div>
 
-    <!-- Histories / Exhibit Labels (400 words each) -->
+    <!-- Histories -->
     <section id="histories-section">
       <h2>Artifact Histories</h2>
 
-      <!-- Sunstone Amulet History -->
+      <!-- Sunstone -->
       <div class="history-item" id="history-sunstone" hidden>
-        <img src="images/collections/sunstone-amulet.jpg" alt="Polished circular Sunstone Amulet with copper inlay">
+        <img src="../images/collections/sunstone-amulet.png" alt="Polished circular Sunstone Amulet with copper inlay">
         <h2>Sunstone Amulet</h2>
         <p><strong>Material:</strong> Sunstone, copper wire inlay</p>
         <p><strong>Dimensions:</strong> 5 cm diameter, 2 mm thick</p>
         <p><strong>Estimated Age:</strong> 1200–1000 BCE</p>
         <p><strong>Location Found:</strong> Central Scandinavia, burial mound</p>
-        <p><strong>Interpretation:</strong> This finely crafted amulet, discovered in a burial context, likely served as a protective talisman and symbol of solar power. 
-        Its etched sun-ray motif demonstrates the Bronze Age Nordic reverence for sunlight and seasonal cycles. The translucent sunstone may have enhanced ritual ceremonies, while the copper inlay adds both decorative and symbolic value. 
-        Excavator notes highlight the amulet’s delicate craftsmanship and suggest it belonged to a high-status individual, reflecting societal hierarchy and ritual practices. 
-        The Sunstone Amulet provides insight into prehistoric belief systems, artistic sophistication, and the symbolic significance of the sun in Nordic culture.</p>
+        <p><strong>Interpretation:</strong> This finely crafted amulet, discovered in a burial context, likely served as a protective talisman and symbol of solar power. Its etched sun-ray motif demonstrates the Bronze Age Nordic reverence for sunlight and seasonal cycles. The translucent sunstone may have enhanced ritual ceremonies, while the copper inlay adds both decorative and symbolic value. Excavator notes highlight the amulet’s delicate craftsmanship and suggest it belonged to a high-status individual, reflecting societal hierarchy and ritual practices. The Sunstone Amulet provides insight into prehistoric belief systems, artistic sophistication, and the symbolic significance of the sun in Nordic culture.</p>
         <p><strong>Comparative Notes:</strong> Similar sunstone amulets have been found across Denmark and Sweden, showing a shared symbolic tradition during the Bronze Age.</p>
         <p><strong>Cautionary Note:</strong> While interpretation leans toward ritual and protective use, the exact beliefs and practices associated with the amulet remain speculative.</p>
         <p><strong>On Display Courtesy Of:</strong> AI-Curated Museum Collection</p>
       </div>
 
-      <!-- Ceremonial Whale Harpoon History -->
+      <!-- Whale -->
       <div class="history-item" id="history-whale" hidden>
-        <img src="images/collections/whale-harpoon.jpg" alt="Elaborately carved Ceremonial Whale Harpoon made from bone and ivory">
+        <img src="../images/collections/whale-harpoon.png" alt="Elaborately carved Ceremonial Whale Harpoon made from bone and ivory">
         <h2>Ceremonial Whale Harpoon</h2>
         <p><strong>Material:</strong> Whale bone, carved ivory tip, sinew bindings</p>
         <p><strong>Dimensions:</strong> 120 cm length, 5 cm diameter, tip 12 cm</p>
@@ -118,9 +114,9 @@
         <p><strong>On Display Courtesy Of:</strong> AI-Curated Museum Collection</p>
       </div>
 
-      <!-- Obsidian Writing Tablet History -->
+      <!-- Obsidian -->
       <div class="history-item" id="history-obsidian" hidden>
-        <img src="images/collections/obsidian-tablet.jpg" alt="Rectangular Obsidian Writing Tablet with red ochre glyphs">
+        <img src="../images/collections/obsidian-tablet.png" alt="Rectangular Obsidian Writing Tablet with red ochre glyphs">
         <h2>Obsidian Writing Tablet</h2>
         <p><strong>Material:</strong> Obsidian slab, red ochre inscriptions</p>
         <p><strong>Dimensions:</strong> 25 cm × 15 cm × 1 cm</p>
@@ -133,9 +129,8 @@
       </div>
 
     </section>
-
   </main>
 
-  <script src="js/modal.js"></script>
+  <script src="../js/modal.js"></script>
 </body>
 </html>
