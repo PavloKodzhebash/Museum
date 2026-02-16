@@ -1,0 +1,120 @@
+/* --- General Collections Grid --- */
+.collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.collection-grid img {
+  width: 250px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.collection-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* --- Modal Styles --- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #fff;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-modal:hover {
+  background: #c0392b;
+}
+
+/* --- Modal Text --- */
+.modal-item h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #2c3e50;
+}
+
+.modal-item p {
+  line-height: 1.6;
+  font-size: 1em;
+  margin: 10px 0;
+  color: #34495e;
+}
+
+/* --- Histories / Exhibit Labels --- */
+#histories-section {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fdf6e3;
+  border-radius: 10px;
+}
+
+.history-item {
+  margin-bottom: 40px;
+  display: none; /* Hidden by default, can show when button clicked */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.history-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.history-item h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.history-item p {
+  line-height: 1.6;
+  color: #34495e;
+  margin: 8px 0;
+}
+
+/* --- Optional: Highlight Facts --- */
+.history-item p strong {
+  color: #e67e22;
+}
