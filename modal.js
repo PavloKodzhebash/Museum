@@ -8,7 +8,7 @@
     const src = document.querySelector(selector);
     if (!src) { console.warn('Missing modal content:', selector); return; }
     modalBody.innerHTML = src.innerHTML;
-    modal.style.display = 'block';
+    modal.style.display = 'flex';  // flex для центрирования
     lastTrigger = trigger || null;
     closeBtn.focus();
     document.body.style.overflow = 'hidden';
@@ -32,6 +32,16 @@
   });
 
   document.addEventListener('keydown', (e)=>{
-    if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
+    if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
   });
+
+  // Show/Hide Histories
+  const historiesBtn = document.getElementById('show-histories');
+  const historiesSection = document.getElementById('histories-section');
+  if (historiesBtn && historiesSection) {
+    historiesBtn.addEventListener('click', () => {
+      historiesSection.style.display = historiesSection.style.display === 'block' ? 'none' : 'block';
+      historiesSection.scrollIntoView({behavior: "smooth"});
+    });
+  }
 })();
