@@ -8,7 +8,7 @@
     const src = document.querySelector(selector);
     if (!src) { console.warn('Missing modal content:', selector); return; }
     modalBody.innerHTML = src.innerHTML;
-    modal.style.display = 'flex';
+    modal.style.display = 'block';
     lastTrigger = trigger || null;
     closeBtn.focus();
     document.body.style.overflow = 'hidden';
@@ -32,16 +32,6 @@
   });
 
   document.addEventListener('keydown', (e)=>{
-    if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
+    if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
   });
-
-  // Show Histories on button click
-  const showHistoriesBtn = document.getElementById('show-histories');
-  const histories = document.querySelectorAll('.history-item');
-
-  showHistoriesBtn.addEventListener('click', ()=>{
-    histories.forEach(h => h.style.display = 'block');
-    document.getElementById('histories-section').scrollIntoView({behavior: 'smooth'});
-  });
-
 })();
