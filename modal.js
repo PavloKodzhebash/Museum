@@ -4,7 +4,6 @@
   const closeBtn   = modal.querySelector('.close-modal');
   let lastTrigger  = null;
 
-  // Open modal from selector
   function openFrom(selector, trigger){
     const src = document.querySelector(selector);
     if (!src) { console.warn('Missing modal content:', selector); return; }
@@ -46,4 +45,3 @@
   });
 
 })();
-
